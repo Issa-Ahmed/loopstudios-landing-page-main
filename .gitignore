@@ -16,5 +16,4 @@
 .prettierignore
 
 style-guide.md
-node_modules
 design
