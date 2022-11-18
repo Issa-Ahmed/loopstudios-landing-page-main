@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Hero section -->
+    <section
+      class="w-full h-screen md:bg-hero-img bg-mobile-hero bg-cover bg-fixed"
+    >
+      <!-- Navigation -->
+      <nav class="flex justify-between items-center pt-8">
+        <div class="md:ml-28 ml-5 z-10">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+        <!-- Mobile menu icon -->
+        <div class="md:hidden block mr-5 cursor-pointer z-10">
+          <img
+            src="./images/icon-hamburger.svg"
+            alt="icon-hamburger"
+            id="showMenu"
+          />
+          <img
+            class="hidden"
+            src="./images/icon-close.svg"
+            alt="icon-close"
+            id="hideMenu"
+          />
+        </div>
+        <!-- Mobile navigation -->
+        <div
+          class="md:hidden absolute w-full h-full bg-black top-0 left-0 translate-x-37 transition-transform duration-700 ease-in"
+          id="mobileNav"
+        >
+          <ul
+            class="relative top-1/2 -translate-y-1/2 ml-10 space-y-6 font-josefin uppercase text-3xl text-white"
+          >
+            <li>About</li>
+            <li>Careers</li>
+            <li>Events</li>
+            <li>Products</li>
+            <li>Support</li>
+          </ul>
+        </div>
+        <!-- Desktop nav links -->
+        <ul class="hidden md:flex space-x-6 mr-24 text-white font-alata">
+          <li
+            class="relative pb-2 after:absolute after:w-4/5 after:h-1 after:bottom-0 after:left-1/2 after:scale-0 after:-translate-x-1/2 after:bg-white after:origin-bottom-right after:transition-transform after:ease-out after:duration-200 hover:after:scale-100 hover:after:origin-bottom-left"
+          >
+            <a href="#">About</a>
+          </li>
+          <li
+            class="relative pb-2 after:absolute after:w-4/5 after:h-1 after:bottom-0 after:left-1/2 after:scale-0 after:-translate-x-1/2 after:bg-white after:origin-bottom-right after:transition-transform after:ease-out after:duration-200 hover:after:scale-100 hover:after:origin-bottom-left"
+          >
+            <a href="#">Careers</a>
+          </li>
+          <li
+            class="relative pb-2 after:absolute after:w-4/5 after:h-1 after:bottom-0 after:left-1/2 after:scale-0 after:-translate-x-1/2 after:bg-white after:origin-bottom-right after:transition-transform after:ease-out after:duration-200 hover:after:scale-100 hover:after:origin-bottom-left"
+          >
+            <a href="#">Events</a>
+          </li>
+          <li
+            class="relative pb-2 after:absolute after:w-4/5 after:h-1 after:bottom-0 after:left-1/2 after:scale-0 after:-translate-x-1/2 after:bg-white after:origin-bottom-right after:transition-transform after:ease-out after:duration-200 hover:after:scale-100 hover:after:origin-bottom-left"
+          >
+            <a href="#">Products</a>
+          </li>
+          <li
+            class="relative pb-2 after:absolute after:w-4/5 after:h-1 after:bottom-0 after:left-1/2 after:scale-0 after:-translate-x-1/2 after:bg-white after:origin-bottom-right after:transition-transform after:ease-out after:duration-200 hover:after:scale-100 hover:after:origin-bottom-left"
+          >
+            <a href="#">Support</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Title -->
+      <div
+        class="md:h-60 h-72 md:w-37 w-9/10 md:mt-36 mt-24 md:ml-28 mx-auto py-8 px-10 border-2 border-white uppercase font-josefin md:text-6xl text-[40px] text-white font-light"
+      >
+        <h1>Immersive Experiences That Deliver</h1>
+      </div>
+    </section>
+    <!-- Interactive section -->
+    <section class="h-screen relative">
+      <div
+        class="md:absolute top-20 md:left-28 md:w-[650px] w-9/10 mx-auto md:h-4/5 h-1/2 mt-2"
+      >
+        <picture>
+          <source
+            media="(max-width: 768px)"
+            srcset="./images/mobile/image-interactive.jpg"
+          />
+          <img
+            src="./images/desktop/image-interactive.jpg"
+            alt="man-wearing-vr-headset"
+            class="object-contain h-full w-full"
+          />
+        </picture>
+      </div>
+      <div
+        class="md:absolute md:bottom-6 bottom-32 md:left-1/2 md:h-72 md:w-37 w-full bg-white md:text-start text-center md:px-14 pt-8"
+      >
+        <h2
+          class="md:text-5xl text-[40px] md:leading-none leading-tight font-josefin uppercase font-light mb-4"
+        >
+          The Leader in intercative vr
+        </h2>
+        <p
+          class="font-alata text-dark-gray md:w-full w-4/5 md:mx-0 mx-auto md:leading-normal leading-7"
+        >
+          Founded in 2011, Loopstudios has been producing world-class virtual
+          reality projects for some of the best companies around the globe. Our
+          award-winning creations have transformed businesses through digital
+          experiences that bind to their brand.
+        </p>
+      </div>
+    </section>
+    <!-- Gallery section -->
+    <section>
+      <!-- heading -->
+      <div
+        class="h-40 flex justify-center md:justify-between items-center md:px-28 uppercase font-light"
+      >
+        <h2 class="text-4xl font-josefin">Our Creations</h2>
+        <a
+          href="#"
+          class="hidden md:block border border-black px-14 py-2 font-alata hover:bg-black hover:transition hover:duration-700 hover:text-white hover:border hover:border-white"
+          >See all</a
+        >
+      </div>
+      <!-- Grid -->
+      <div
+        class="h-fit w-full grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 md:px-28 gap-x-10 gap-y-4 font-josefin"
+      >
+        <!-- Row 1  -->
+        <div
+          class="relative md:h-[450px] h-fit md:w-[256px] w-9/10 mx-auto cursor-pointer text-white hover:text-black hover:font-normal after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-dark-gray after:bg-opacity-0 after:brightness-200 after:transition after:duration-300 hover:after:bg-opacity-70"
+        >
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/mobile/image-deep-earth.jpg"
+            />
+            <img
+              src="./images/desktop/image-deep-earth.jpg"
+              alt="globe-earth"
+              class="object-fill w-full h-full"
+            />
+          </picture>
+          <a href="#" class="z-50 absolute bottom-5 left-8 text-3xl uppercase">
+            Deep <br />Earth
+          </a>
+        </div>
+        <div
+          class="relative md:h-[450px] h-fit md:w-[256px] w-9/10 mx-auto cursor-pointer text-white hover:text-black hover:font-normal after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-dark-gray after:bg-opacity-0 after:brightness-200 after:transition after:duration-300 hover:after:bg-opacity-70"
+        >
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/mobile/image-night-arcade.jpg"
+            />
+            <img
+              src="./images/desktop/image-night-arcade.jpg"
+              alt="night-aracade"
+              class="object-fill w-full h-full"
+            />
+          </picture>
+          <a href="#" class="z-50 absolute bottom-5 left-8 text-3xl uppercase">
+            Night <br />
+            Arcade
+          </a>
+        </div>
+        <div
+          class="relative md:h-[450px] h-fit md:w-[256px] w-9/10 mx-auto cursor-pointer text-white hover:text-black hover:font-normal after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-dark-gray after:bg-opacity-0 after:brightness-200 after:transition after:duration-300 hover:after:bg-opacity-70"
+        >
+          <picture>
+            <source
+              media="(max-width: 768px )"
+              srcset="./images/mobile/image-soccer-team.jpg"
+            />
+            <img
+              src="./images/desktop/image-soccer-team.jpg"
+              alt="man-playing-soccer"
+              class="object-fill w-full h-full"
+            />
+          </picture>
+          <a href="#" class="z-50 absolute bottom-5 left-8 text-3xl uppercase">
+            Soccer <br />Team Vr
+          </a>
+        </div>
+        <div
+          class="relative md:h-[450px] h-fit md:w-[256px] w-9/10 mx-auto cursor-pointer text-white hover:text-black hover:font-normal after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-dark-gray after:bg-opacity-0 after:brightness-200 after:transition after:duration-300 hover:after:bg-opacity-70"
+        >
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/mobile/image-grid.jpg"
+            />
+            <img
+              src="./images/desktop/image-grid.jpg"
+              alt="car-wheel"
+              class="object-fill w-full h-full"
+            />
+          </picture>
+          <a href="#" class="z-50 absolute bottom-5 left-8 text-3xl uppercase">
+            The <br />Grid
+          </a>
+        </div>
+        <!-- Row 2 -->
+        <div
+          class="relative md:h-[450px] h-fit md:w-[256px] w-9/10 mx-auto cursor-pointer text-white hover:text-black hover:font-normal after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-dark-gray after:bg-opacity-0 after:brightness-200 after:transition after:duration-300 hover:after:bg-opacity-70"
+        >
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/mobile/image-from-above.jpg"
+            />
+            <img
+              src="./images/desktop/image-from-above.jpg"
+              alt="road-from-above"
+              class="object-fill w-full h-full"
+            />
+          </picture>
+          <a href="#" class="z-50 absolute bottom-5 left-8 text-3xl uppercase">
+            From up <br />
+            above vr
+          </a>
+        </div>
+        <div
+          class="relative md:h-[450px] h-fit md:w-[256px] w-9/10 mx-auto cursor-pointer text-white hover:text-black hover:font-normal after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-dark-gray after:bg-opacity-0 after:brightness-200 after:transition after:duration-300 hover:after:bg-opacity-70"
+        >
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/mobile/image-pocket-borealis.jpg"
+            />
+            <img
+              src="./images/desktop/image-pocket-borealis.jpg"
+              alt="northern-lights"
+              class="object-fill w-full h-full"
+            />
+          </picture>
+          <a href="#" class="z-50 absolute bottom-5 left-8 text-3xl uppercase">
+            Pocket <br />Borealis
+          </a>
+        </div>
+        <div
+          class="relative md:h-[450px] h-fit md:w-[256px] w-9/10 mx-auto cursor-pointer text-white hover:text-black hover:font-normal after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-dark-gray after:bg-opacity-0 after:brightness-200 after:transition after:duration-300 hover:after:bg-opacity-70"
+        >
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/mobile/image-curiosity.jpg"
+            />
+            <img
+              src="./images/desktop/image-curiosity.jpg"
+              alt="mars-rover"
+              class="object-fill w-full h-full"
+            />
+          </picture>
+          <a href="#" class="z-50 absolute bottom-5 left-8 text-3xl uppercase">
+            The <br />Curiosity
+          </a>
+        </div>
+        <div
+          class="relative md:h-[450px] h-fit md:w-[256px] w-9/10 mx-auto cursor-pointer text-white hover:text-black hover:font-normal after:absolute after:top-0 after:left-0 after:h-full after:w-full after:bg-dark-gray after:bg-opacity-0 after:brightness-200 after:transition after:duration-300 hover:after:bg-opacity-70"
+        >
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/mobile/image-fisheye.jpg"
+            />
+            <img
+              src="./images/desktop/image-fisheye.jpg"
+              alt="fisheye-view"
+              class="object-fill w-full h-full"
+            />
+          </picture>
+          <a href="#" class="z-50 absolute bottom-5 left-8 text-3xl uppercase">
+            Make it <br />
+            fisheye
+          </a>
+        </div>
+      </div>
+      <div
+        class="block md:hidden h-20 w-9/10 mx-auto uppercase font-alata text-center pt-10"
+      >
+        <a
+          href="#"
+          class="border border-black text-black px-14 py-2 hover:bg-black hover:transition hover:duration-700 hover:text-white hover:border hover:border-white"
+          >See all</a
+        >
+      </div>
+    </section>
+    <!-- Footer -->
+
+    <footer
+      class="flex md:flex-row flex-col md:justify-between items-center w-full md:h-32 h-fit md:px-28 mt-20 bg-black"
+    >
+      <!-- Left side -->
+      <div>
+        <div class="py-6">
+          <img src="./images/logo.svg" alt="" />
+        </div>
+        <ul
+          class="flex md:flex-row flex-col items-center text-white md:space-x-6 md:space-y-0 space-y-3 font-alata"
+        >
+          <li
+            class="relative pb-2 cursor-pointer after:absolute after:w-4/5 after:h-1 after:bottom-0 after:left-1/2 after:scale-0 after:-translate-x-1/2 after:bg-white after:origin-bottom-right after:transition-transform after:ease-out after:duration-200 hover:after:scale-100 hover:after:origin-bottom-left"
+          >
+            About
+          </li>
+          <li
+            class="relative pb-2 cursor-pointer after:absolute after:w-4/5 after:h-1 after:bottom-0 after:left-1/2 after:scale-0 after:-translate-x-1/2 after:bg-white after:origin-bottom-right after:transition-transform after:ease-out after:duration-200 hover:after:scale-100 hover:after:origin-bottom-left"
+          >
+            Careers
+          </li>
+          <li
+            class="relative pb-2 cursor-pointer after:absolute after:w-4/5 after:h-1 after:bottom-0 after:left-1/2 after:scale-0 after:-translate-x-1/2 after:bg-white after:origin-bottom-right after:transition-transform after:ease-out after:duration-200 hover:after:scale-100 hover:after:origin-bottom-left"
+          >
+            Events
+          </li>
+          <li
+            class="relative pb-2 cursor-pointer after:absolute after:w-4/5 after:h-1 after:bottom-0 after:left-1/2 after:scale-0 after:-translate-x-1/2 after:bg-white after:origin-bottom-right after:transition-transform after:ease-out after:duration-200 hover:after:scale-100 hover:after:origin-bottom-left"
+          >
+            Products
+          </li>
+          <li
+            class="relative pb-2 cursor-pointer after:absolute after:w-4/5 after:h-1 after:bottom-0 after:left-1/2 after:scale-0 after:-translate-x-1/2 after:bg-white after:origin-bottom-right after:transition-transform after:ease-out after:duration-200 hover:after:scale-100 hover:after:origin-bottom-left"
+          >
+            Support
+          </li>
+        </ul>
+      </div>
+      <!-- Right side -->
+      <div class="md:pt-6 pt-10 flex flex-col md:items-end items-center">
+        <!-- Social media icons -->
+        <div class="flex space-x-5">
+          <div
+            class="relative cursor-pointer after:absolute after:w-full after:h-0.5 after:-bottom-2 after:left-0 after:scale-0 after:bg-white after:origin-bottom-right after:transition-transform after:ease-out after:duration-200 hover:after:scale-100 hover:after:origin-bottom-left"
+          >
+            <img src="./images/icon-facebook.svg" alt="facebook-icon" />
+          </div>
+          <div
+            class="relative cursor-pointer after:absolute after:w-full after:h-0.5 after:-bottom-2 after:left-0 after:scale-0 after:bg-white after:origin-bottom-right after:transition-transform after:ease-out after:duration-200 hover:after:scale-100 hover:after:origin-bottom-left"
+          >
+            <img src="./images/icon-twitter.svg" alt="twitter-icon" />
+          </div>
+          <div
+            class="relative cursor-pointer after:absolute after:w-full after:h-0.5 after:-bottom-2 after:left-0 after:scale-0 after:bg-white after:origin-bottom-right after:transition-transform after:ease-out after:duration-200 hover:after:scale-100 hover:after:origin-bottom-left"
+          >
+            <img src="./images/icon-pinterest.svg" alt="pinterest-icon" />
+          </div>
+          <div
+            class="relative cursor-pointer after:absolute after:w-full after:h-0.5 after:-bottom-2 after:left-0 after:scale-0 after:bg-white after:origin-bottom-right after:transition-transform after:ease-out after:duration-200 hover:after:scale-100 hover:after:origin-bottom-left"
+          >
+            <img src="./images/icon-instagram.svg" alt="instagram-icon" />
+          </div>
+        </div>
+        <!-- Copyright -->
+        <p class="text-very-dark-gray font-alata md:pt-5 md:my-0 my-5">
+          &copy; 2021 Loopstudios. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
